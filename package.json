@@ -1,0 +1,32 @@
+{
+  "name": "timestamps",
+  "version": "0.1.0",
+  "description": "Timestamp service",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava",
+    "start": "concurrently \"./node_modules/.bin/babel-node index.js\" \"ava\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "ava-http": "^0.2.1",
+    "babel-cli": "^6.18.0",
+    "babel-preset-latest": "^6.16.0",
+    "concurrently": "^3.1.0",
+    "eslint": "^3.11.1",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "supertest": "^2.0.1",
+    "supertest-as-promised": "^4.0.2"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "moment": "^2.17.0"
+  },
+  "ava": {
+    "watch": true
+  }
+}
