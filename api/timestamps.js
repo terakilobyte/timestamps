@@ -1,7 +1,6 @@
 const router = require('express').Router()
 var moment = require('moment')
 
-router.get('/', (req, res) => res.status(200).send('API ok'))
 router.get('/*', timeStamp)
 
 function timeStamp (req, res) {
