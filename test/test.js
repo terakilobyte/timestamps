@@ -32,3 +32,9 @@ test('it returns null fields for invalid input', async t => {
   res = await request(app).get('/api/Ja%2015%20234877234587')
   t.deepEqual(res.body, {unix: null, natural: null})
 })
+
+test('it returns the get request on redirect', async t => {
+  t.plan(1)
+  const res = await request(app).post('/testredirect')
+  t.is(res.text, 'Found. Redirecting to /shenanigans')
+})
